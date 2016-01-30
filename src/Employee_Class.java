@@ -15,7 +15,26 @@ public class Employee_Class {
 
 	public static void main(String[] args) {
 		
-		employee Employee1 = new employee("Bob", "Smith", 3000);
+		employee Employee1 = new employee("Bob", "Smith", 4500);
+		employee Employee2 = new employee("Tim", "Green", 3500);
+		
+		System.out.println(Employee1.getFirstName() + " " + Employee1.getLastName() + "'s Annual Salary is: " + Employee1.getAnnualSalary());
+		System.out.println(Employee2.getFirstName() + " " + Employee2.getLastName() + "'s Annual Salary is: " + Employee2.getAnnualSalary());
+		
+		System.out.println(Employee1.getFirstName() + " get's a 10% raise...");
+		System.out.println(Employee2.getFirstName() + " get's a 10% raise...");
+		
+		System.out.println(Employee1.getFirstName() + "'s new salary is " + Employee1.getRaise());
+		System.out.println(Employee2.getFirstName() + "'s new salary is " + Employee2.getRaise());
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
@@ -56,6 +75,14 @@ class employee{
 
 	public void setMonthlySalary(double monthlySalary) {
 		MonthlySalary = monthlySalary;
+	}
+	
+	public double getAnnualSalary(){
+		return MonthlySalary * 12;
+	}
+	
+	public double getRaise(){
+		return ((MonthlySalary * 0.10) + MonthlySalary) * 12;
 	}
 	
 	
