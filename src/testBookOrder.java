@@ -1,10 +1,10 @@
 import java.util.Date;
 public class testBookOrder extends BookOrder{
 	public static void main(String[] args) {
-		Book book1 = new Book("author1", "ISBN1", "title1", 29.95);
-		Book book2 = new Book("author2", "ISBN2", "title2", 19.95);
-		eBook book3 = new eBook("author3", "ISBN3", "title3", 39.50, 2, "MB");
-		eBook book4 = new eBook("author4", "ISBN4", "title4", 49.50, 4, "MB");
+		Book book1 = new Book("author1", "ISBN1", "book", "title1", 29.95);
+		Book book2 = new Book("author2", "ISBN2", "book", "title2", 19.95);
+		eBook book3 = new eBook("author3", "ISBN3", "eBook", "title3", 39.50, 2500, "MOBI");
+		eBook book4 = new eBook("author4", "ISBN4", "eBook", "title4", 49.50, 1500, "PDF");
 		Date date = new Date();
 		
 		BookOrder orderOne = new BookOrder("One");
